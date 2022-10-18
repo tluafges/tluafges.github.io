@@ -2745,6 +2745,7 @@ var tns = (function () {
           (function (q, rn) {
             var M = document.createElement("span");
             M.classList.add("ityped-cursor"),
+            M.classList.add("c-subscribe__title"),
               (M.textContent = "|"),
               (M.textContent = rn.cursorChar),
               q.insertAdjacentElement("afterend", M);

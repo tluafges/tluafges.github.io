@@ -36,11 +36,11 @@
         <div class="c-header__inner">
 
           <div class="logo">
-            <a class="logo__link" href="#">
+            <!--<a class="logo__link" href="#">-->
 
-              <img alt="Vonge" class="logo__image" data-cms-original-src="/images/logo.svg" src={{"assets/images/logo_camilo.png"}}>
+              <img alt="logo" class="logo__image" data-cms-original-src="/images/logo.svg" src={{"assets/images/logo_camilo.png"}}>
 
-            </a>
+            <!--</a>-->
           </div>
 
           <nav class="main-nav">
@@ -86,6 +86,11 @@
 
                 <li class="social__item">
                   CV <a aria-label="pinterest icon" class="social__link" href={{"assets/CV/sample.pdf"}} rel="noopener" download="CV_Camilo"><i class="fa-solid fa-file-pdf"></i></a>
+                </li>
+
+                <li class="social__item">
+                  <a type="text" href="#" onclick="copy(this);return false;" class="social__link" rel="noopener" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                  <span></span>
                 </li>
 
                 <li class="social__item">
@@ -143,7 +148,7 @@
                 <div class="c-hero__description">
                   <p><strong>Étudiant en informatique à l'école 42.</strong> <br>
                     Je suis à la recherche d'un premier stage d'une durée de 4 à 6 mois, afin de mettre en pratique mes
-                    connaissances apprises.
+                    connaissances acquises.
                   </p>
                 </div>
                 <div class="c-hero__btn">
@@ -519,7 +524,7 @@
                 <article class="c-project-card col col-4 col-d-6 col-t-12">
                   <div class="c-project-card__content">
                     <a class="c-project-card__image" href="https://github.com/42corozco/42_Cub3D" target="_blank">
-                      <img alt="Mountains" data-cms-original-src="/images/project-4.jpg" loading="lazy" src={{"assets/gifs/cub3d.gif"}}>
+                      <img alt="Cub3D" data-cms-original-src="/images/project-4.jpg" loading="lazy" src={{"assets/gifs/cub3d.gif"}}>
                     </a>
                     <div class="c-project-card__info">
                       <div class="c-project-card__info-wrap">
@@ -644,6 +649,12 @@
 
                 </div>
 
+                
+                <label class="c-contact-form__form-label screen-reader-text" for="form-name">Mon Email</label>
+                <input type="text" onclick="copy(this);return false;" style="font-family:Arial, FontAwesome" class="c-contact-form__form-input" id="form-name" name="name" placeholder="camilo@corozco.fr &#xf0c5;" style="FontAwesome" required="" type="text" readonly>
+                <span></span>
+
+
 
               </div>
             </div>
@@ -664,12 +675,19 @@
             <div class="c-subscribe__inner">
               <div class="c-subscribe__info">
                 <div class="c-subscribe__subtitle">
-                  <span id="ityped" class="c-subscribe__title"></span><span class="ityped-cursor c-subscribe__title">|</span>
+                  <span id="ityped" class="c-subscribe__title"></span>
                 </div>
               </div>
 
               <form class="c-contact-form__form" action="https://getform.io/f/eab3359d-e1c7-41ba-a223-986d538226e6"
                 method="POST">
+
+
+                <div class="c-contact-form__form-group2">
+                  <label class="c-contact-form__form-label screen-reader-text" for="form-name">Mon Email</label>
+                  <input type="text" onclick="copy(this);return false;" style="font-family:Arial, FontAwesome" class="c-contact-form__form-input" id="form-name" name="name" placeholder="camilo@corozco.fr &#xf0c5;" style="FontAwesome" required="" type="text" readonly>
+                  <span></span>
+                </div>
                 <div class="c-contact-form__form-group">
                   <label class="c-contact-form__form-label screen-reader-text" for="form-name">Nom</label>
                   <input class="c-contact-form__form-input" id="form-name" name="name" placeholder="Nom..." required="" type="text">
@@ -716,6 +734,9 @@
           <!--bookshop-live name(social-link.jekyll.html) params() context() -->
           <div class="social">
             <ul class="social__list list-reset">
+              <li class="social__item">
+                <a type="text" href="#" onclick="copy(this);return false;" class="social__link" rel="noopener" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+              </li>
               <li class="social__item">
                 <a aria-label="linkedin icon" class="social__link" href="https://www.linkedin.com/in/42corozco/"
                   rel="noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -773,9 +794,27 @@
     })();
   </script>
 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script>
+
+
+    function copy(elem){
+        //input  = $(elem).val();
+        //elem.select();//Select the text in the input element 
+        //document.execCommand('copy');//copy it 
+        navigator.clipboard.writeText("camilo@corozco.fr");
+
+        $(elem).next().text('Copié');
+
+        setTimeout(function(){$(elem).next().text('');}, 2000);//
+    }
+
+
+</script>
+
+
   <script data-cms-original-src="/js/scripts.js" src="{{ base.url | prepend: site.url}}/assets/js/scripts.js"></script>
-  <script data-cms-original-src="/js/common.js" src="{{ base.url | prepend: site.url}}/assets/js/common.js" }}></script>
-  <script data-cms-original-src="/js/common.js" src="{{ base.url | prepend: site.url}}/assets/js/test.js" }}></script>
+  <script data-cms-original-src="/js/common.js" src="{{ base.url | prepend: site.url}}/assets/js/common.js"></script>
 
 
 </body>

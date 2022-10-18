@@ -2043,7 +2043,7 @@
     margin-top: 44px;
     padding: 96px 0 60px;
     overflow: hidden;
-    background: linear-gradient(90deg, #1495a7 0, #003687 167%);
+    background: linear-gradient(180deg, #1495a7 0, #003687 167%);
   }
   .footer .social {
     margin-bottom: 40px;
@@ -2059,7 +2059,7 @@
     line-height: 40px;
     font-size: 16px;
     border-radius: 50%;
-    color: #1495a7;
+    color: #202020;
     background: #fff;
     transition: all 0.25s;
     will-change: transform;
@@ -3195,7 +3195,7 @@
     border-radius: 8px;
     will-change: transform;
     transition: opacity 0.35s;
-    background: linear-gradient(90deg, #1495a7 0, #003687 107%);
+    background: linear-gradient(180deg, #1495a7 0, #003687 107%);
   }
   .c-blog-card__tag:last-child {
     margin: 0 0 4px 0;
@@ -3306,7 +3306,7 @@
     opacity: 0;
     will-change: transform;
     transition: opacity 0.35s;
-    background: linear-gradient(90deg, #1495a7 0, #003687 107%);
+    background: linear-gradient(180deg, #1495a7 0, #003687 107%);
   }
   .c-button--secondary {
     color: #110e38;
@@ -3354,6 +3354,10 @@
   .c-contact-form__form {
     position: relative;
     margin-bottom: 60px;
+  }
+  .c-contact-form__form-group2 {
+    margin-bottom: 20px;
+    font-size: 10;
   }
   .c-contact-form__form-group {
     margin-bottom: 20px;
@@ -3974,7 +3978,7 @@
     visibility: hidden;
     background: linear-gradient(
       360deg,
-      #1495a7 0,
+      #202020 0,
       rgba(0, 54, 135, 0.3) 120.95%
     );
   }
